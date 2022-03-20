@@ -9,5 +9,9 @@ export const config = {
 		title: "Thomas Bean | Software Engineer",
 		description: "Thomas Bean's portfolio page",
 	},
+	now: {
+		hello: "hi there",
+		doing: "I am doing cool stuff",
+	},
 	projects,
 };
