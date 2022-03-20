@@ -15,9 +15,13 @@ const Home: NextPage = () => {
 	const [mode, setMode] = React.useState<"light" | "dark">("light");
 
 	const projectsRef = React.useRef<HTMLDivElement | null>(null);
+	const nowRef = React.useRef<HTMLDivElement | null>(null);
 
 	const scrollToProjects = () =>
-		projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+		projectsRef.current?.scrollIntoView({ behavior: "auto" });
+
+	const scrollToNow = () =>
+		nowRef.current?.scrollIntoView({ behavior: "smooth" });
 
 	const toggleMode = () => {
 		mode === "dark" ? setMode("light") : setMode("dark");
@@ -45,6 +49,7 @@ const Home: NextPage = () => {
 				<AnimateSharedLayout type="crossfade">
 					<IntroSection
 						scrollToProjects={scrollToProjects}
+						scrollToNow={scrollToNow}
 						currentMode={mode}
 						toggleDarkMode={toggleMode}
 					/>

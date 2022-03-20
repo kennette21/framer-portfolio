@@ -68,7 +68,7 @@ export const projects: Project[] = [
 		coverImageUrl:
 			"https://d3e1crb45p2z3j.cloudfront.net/portfolio/powwow/logo.png",
 		coverImageAlt: "Picture of PowWow logo",
-		projectUrl: "",
+		projectUrl: "https://vimeo.com/201776256/7239fff7a0",
 	},
 	{
 		title: "Electric ATV",
